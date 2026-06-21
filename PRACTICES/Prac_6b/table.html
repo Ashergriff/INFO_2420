@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice 6 - Tables</title>
+
+    <style type="text/css">
+        .center {
+            text-align: center;
+        }
+
+        .tablecenter {
+            width: 550px;
+            margin: auto;
+			border: 1px solid black;
+        }
+
+        .captionstyle {
+            color: #003300;
+            font-size: 26px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .firstcol {
+            background-color: #CCCCCC;
+            width: 25%;
+        }
+
+        .days {
+            width: 15%;
+        }
+
+        .dayhead {
+            background-color: #99FF66;
+        }
+		
+		caption{
+		font-size: 20px;
+		font-weight: bold;
+		font-color: #003300
+		}
+
+        th, td {
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<a href="../../index.html">Back</a>
+    <div class="center">
+        <table class="tablecenter" border="1" cellspacing="6" cellpadding="8">
+            <caption class="captionstyle">My Class Schedule</caption>
+
+            <colgroup class="firstcol"></colgroup>
+            <colgroup class="days" span="5"></colgroup>
+
+            <tr>
+                <th>Courses</th>
+                <th class="dayhead">Monday</th>
+                <th class="dayhead">Tuesday</th>
+                <th class="dayhead">Wednesday</th>
+                <th class="dayhead">Thursday</th>
+                <th class="dayhead">Friday</th>
+            </tr>
+
+            <tr>
+                <td>Info 1120</td>
+                <td>&nbsp;</td>
+                <td>9-11</td>
+                <td>&nbsp;</td>
+                <td>9-11</td>
+                <td rowspan="2">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>Math 1010</td>
+                <td colspan="4">12-1</td>
+            </tr>
+
+            <tr>
+                <td>Info 2420</td>
+                <td colspan="5">Online available 24/7</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
