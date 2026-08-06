@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backyard Birds of Utah Home Page</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="preloadImages()">
+
+    <header class="clearfix">
+        <div id="logoBox">
+            <a href="#"
+               onmouseover="document.getElementById('siteLogo').src='Images/logohovers.png';"
+               onmouseout="document.getElementById('siteLogo').src='Images/nobckglogo.png';">
+                <img id="siteLogo" src="Images/nobckglogo.png" alt="Backyard Birds logo">
+            </a>
+        </div>
+
+        <div id="bannerBox">
+            <img id="banner" src="Images/Banner.jpg" alt="Backyard Birds of Utah banner">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Tributes.html">Tributes</a></li>
+                <li><a href="Survey.html">Survey</a></li>
+                <li><a href="Favorites.html">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <h1>Backyard Birds of Utah</h1>
+
+            <p>
+                Welcome to Backyard Birds of Utah!
+                If you love birdwatching like we do, you should enjoy looking around this site.
+                Take a look at our Bird Profiles and take the opportunity to complete our survey.
+            </p>
+
+            <h2>Bird Profiles</h2>
+            <p class="instructions">Move your mouse over the thumbnails to see a larger image.</p>
+
+            <div id="thumbs">
+                <img src="Images/thumbnails/image1sm.jpg" alt="American Goldfinch" onmouseover="swapImage(0);">
+                <img src="Images/thumbnails/image2sm.jpg" alt="Bald Eagle" onmouseover="swapImage(1);">
+                <img src="Images/thumbnails/image3sm.jpg" alt="Blue Bird" onmouseover="swapImage(2);">
+                <img src="Images/thumbnails/image4sm.jpg" alt="Cardinal" onmouseover="swapImage(3);">
+            </div>
+
+            <div id="image">
+                <img id="theImage" src="Images/fullsize/image1lg.jpg" alt="American Goldfinch">
+                <h3 id="bottomText">American Goldfinch</h3>
+            </div>
+
+            <h2>Tribute Spotlight</h2>
+            <img src="Images/Tributes/HawkSm.jpg" alt="Featured backyard bird" class="tributeimg">
+
+            <p>
+                Backyard birdwatching gives us a chance to enjoy Utah wildlife up close.
+                From colorful songbirds to majestic raptors, every sighting adds to the fun of learning about nature.
+                <a href="Tributes.html">more &gt;&gt;</a>
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>
+            Contact the Webmaster:
+            <a href="mailto:asher@buisness.com">asher@buisness.com</a>
+        </p>
+
+        <p>This web site has been created solely for educational purposes.</p>
+    </footer>
+
+</body>
+</html>

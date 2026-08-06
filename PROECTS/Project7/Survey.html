@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey: Utah Backyard Birds</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body>
+
+<header>
+    <a href="#"
+       onmouseover="document.getElementById('siteLogo').src='Images/logohovers.png';"
+       onmouseout="document.getElementById('siteLogo').src='Images/nobckglogo.png';">
+        <img id="siteLogo" src="Images/nobckglogo.png" width="133" height="126" alt="Backyard Birds logo">
+    </a>
+
+    <img id="banner" src="Images/Banner.jpg" alt="Backyard Birds of Utah banner">
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Tributes.html">Tributes</a></li>
+            <li><a href="Survey.html">Survey</a></li>
+            <li><a href="Favorites.html">Favorites</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <article>
+        <h1>Backyard Birds Survey</h1>
+        <hr>
+
+        <p>
+            We would love to hear about your birdwatching experiences in Utah.
+            Please take a moment to complete this survey and share your favorite birds,
+            birdwatching habits, and interests.
+        </p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" size="40">
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" size="40">
+            </p>
+
+            <p>
+                <label for="age">Age Range:</label><br>
+                <select id="age" name="age">
+                    <option value="">Select one</option>
+                    <option value="under18">Under 18</option>
+                    <option value="18to25">18–25</option>
+                    <option value="26to40">26–40</option>
+                    <option value="41to60">41–60</option>
+                    <option value="61plus">61 and over</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="favoritebird">Favorite Backyard Bird:</label><br>
+                <input type="text" id="favoritebird" name="favoritebird" size="40">
+            </p>
+
+            <p>
+                How often do you watch birds?<br>
+                <input type="radio" id="daily" name="watching" value="daily">
+                <label for="daily">Daily</label><br>
+
+                <input type="radio" id="weekly" name="watching" value="weekly">
+                <label for="weekly">Weekly</label><br>
+
+                <input type="radio" id="monthly" name="watching" value="monthly">
+                <label for="monthly">Monthly</label><br>
+
+                <input type="radio" id="occasionally" name="watching" value="occasionally">
+                <label for="occasionally">Occasionally</label>
+            </p>
+
+            <p>
+                Which birds have you seen in your area?<br>
+                <input type="checkbox" id="goldfinch" name="birdsseen" value="goldfinch">
+                <label for="goldfinch">American Goldfinch</label><br>
+
+                <input type="checkbox" id="eagle" name="birdsseen" value="eagle">
+                <label for="eagle">Bald Eagle</label><br>
+
+                <input type="checkbox" id="bluebird" name="birdsseen" value="bluebird">
+                <label for="bluebird">Blue Bird</label><br>
+
+                <input type="checkbox" id="cardinal" name="birdsseen" value="cardinal">
+                <label for="cardinal">Cardinal</label><br>
+
+                <input type="checkbox" id="hummingbird" name="birdsseen" value="hummingbird">
+                <label for="hummingbird">Hummingbird</label>
+            </p>
+
+            <p>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="6" cols="50"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" value="Clear Form" class="btn">
+            </p>
+        </form>
+    </article>
+</section>
+
+<footer>
+    <p>
+        Contact the Webmaster:
+        <a href="mailto:asher@buisness.com">asher@buisness.com</a>
+    </p>
+    <p>This web site has been created solely for educational purposes.</p>
+</footer>
+
+</body>
+</html>
